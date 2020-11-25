@@ -55,12 +55,7 @@ class Enigma:
         return self.geraArray()
 
     def retornaIndiceLetra(self, letra, rotor):
-        count = 0
-        for pletra in rotor:
-            if (letra == pletra):
-                return count
-            else:
-                count += 1
+        return(rotor.index(letra))
 
     def retornaMath(self, indiceEntrada, inicioRotor1, inicioRotor2, arrayRotorDois):
         if(indiceEntrada > inicioRotor1):
@@ -87,5 +82,4 @@ class Enigma:
     #     indiceLetraRotor2 = self.retornaIndiceLetra(letraMatch)
     #     return = self.retornaMath(indiceLetraRotor2, self.rotor2, self.rotor3, self.getrotor3)
         
-
 enig = Enigma()
