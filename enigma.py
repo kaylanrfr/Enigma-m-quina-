@@ -8,7 +8,7 @@ class Enigma:
         self.rotor1 = []
         self.rotor2 = []
         self.rotor3 = []
-
+        self.array = []
     def setRotor1(self, arrayRotor):
         if (len(arrayRotor) > 0):
             self.rotor1 = arrayRotor
