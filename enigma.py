@@ -42,7 +42,7 @@ class Enigma:
     def geraArray(self):
         array = []
         i = 1
-        while(i <= 25):
+        while(i <= 26):
             indiceNovo = self.retornaLetra()
             if(indiceNovo in array):
                 indiceNovo = self.retornaLetra()
@@ -83,3 +83,18 @@ class Enigma:
     #     return = self.retornaMath(indiceLetraRotor2, self.rotor2, self.rotor3, self.getrotor3)
         
 enig = Enigma()
+enig.setRotor1(enig.array)
+print(enig.rotor1)
+enig.setRotor2(enig.array)
+print(enig.rotor2)
+enig.setRotor3(enig.array)
+print(enig.rotor3)
+frase = "kaylan"
+frase2 = ""
+for i in frase:
+    frase2+=(enig.rotor1[enig.retornaIndiceLetra(i, enig.rotor2)])
+print(frase2)
+
+
+
+
