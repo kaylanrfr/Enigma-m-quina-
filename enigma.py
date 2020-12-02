@@ -92,7 +92,7 @@ print(enig.rotor3)
 frase = "kaylan"
 frase2 = ""
 for i in frase:
-    frase2+=(enig.rotor1[enig.retornaIndiceLetra(i, enig.rotor2)])
+    frase2+=(enig.rotor1[enig.retornaIndiceLetra(i, enig.rotor2)])#so pra testar o valor entre os rotores
 print(frase2)
 
 
